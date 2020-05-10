@@ -12,8 +12,8 @@ function App() {
         <StoreProvider>
           <Nav />
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/home" component={Home} />
+            <Route  path="/" component={Home} />
+            <Route  path="/home" component={Home} />
             <Route component={NoMatch} />
           </Switch>
         </StoreProvider>
