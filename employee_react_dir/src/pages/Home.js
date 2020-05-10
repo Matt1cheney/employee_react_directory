@@ -1,17 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Col, Row, Container } from "../components/Grid";
-import CreatePostForm from "../components/CreatePostForm";
-import PostsList from "../components/PostsList";
-
+import EmployeesContainer from "../components/EmployeesContainer";
+import API from "../utils/API";
 const Home = () => {
+
   return (
     <Container fluid>
       <Row>
         <Col size="md-6">
-          <CreatePostForm />
         </Col>
         <Col size="md-6 sm-12">
-          <PostsList />
+          <EmployeesContainer />
         </Col>
       </Row>
     </Container>

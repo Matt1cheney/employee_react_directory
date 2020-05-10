@@ -4,7 +4,11 @@ const db = require("../models");
 
 // This file empties the Posts collection and inserts the books below
 
-mongoose.connect(process.env.MONGODB_URI ||  process.env.MONGO_DATABASE);
+mongoose.connect(process.env.MONGODB_URI || process.env.MONGO_DATABASE,{
+  useNewUrlParser: true,
+  useFindAndModify: false
+  
+});
 
 const employeeSeed = [
   {
@@ -27,10 +31,45 @@ const employeeSeed = [
     email: "justine.lilly@mycompany.com",
     date: new Date(Date.now())
   },
+  {
+    fullName: "Justin Timberlake",
+    email: "Justin.Timberlake@mycompany.com",
+    date: new Date(Date.now())
+  },
+  {
+    fullName: "Bobby Hoffman",
+    email: "Bobby_thewizard_Hoffman@mycompany.com",
+    date: new Date(Date.now())
+  },
+  {
+    fullName: "Mike Fearnley",
+    email: "Mike_breaksthings_Fearnley@mycompany.com",
+    date: new Date(Date.now())
+  },
+  {
+    fullName: "Sam Bates",
+    email: "Sam.Bates@mycompany.com",
+    date: new Date(Date.now())
+  },
+  {
+    fullName: "Ted Bundy",
+    email: "Ted.Bundy@mycompany.com",
+    date: new Date(Date.now())
+  },
+  {
+    fullName: "Chris Hanson",
+    email: "Chris.hanson@mycompany.com",
+    date: new Date(Date.now())
+  },
+  {
+    fullName: "Tony Stark",
+    email: "Ironman@mycompany.com",
+    date: new Date(Date.now())
+  },
 ];
 
-db.Post.remove({})
-  .then(() => db.Post.collection.insertMany(employeeSeed))
+db.EmployeeDir.remove({})
+  .then(() => db.EmployeeDir.collection.insertMany(employeeSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);

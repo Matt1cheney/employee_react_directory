@@ -1,0 +1,5 @@
+export const SEARCH_BY_FULLNAME = "SEARCH_BY_FULLNAME";
+export const SEARCH_BY_EMAIL = "SEARCH_BY_EMAIL";
+export const GET_EMPLOYEES = "GET_EMPLOYEES";
+export const SET_EMPLOYEES = "SET_EMPLOYEES";
+
