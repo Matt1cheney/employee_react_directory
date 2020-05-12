@@ -1,6 +1,7 @@
 {
   "name": "cms",
   "version": "0.1.0",
+  "private": true,
   "proxy": "http://localhost:3001/",
   "dependencies": {
     "react": "^16.6.3",
@@ -12,8 +13,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
