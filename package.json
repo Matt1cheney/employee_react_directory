@@ -1,8 +1,6 @@
 {
   "name": "employee_react_dir",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://matt1cheney.github.io/employee_react_directory/",
   "main": "server.js",
   "proxy": "http://localhost:3001",
   "dependencies": {
