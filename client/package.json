@@ -1,8 +1,6 @@
 {
   "name": "cms",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://matt1cheney.github.io/employee_react_directory/",
   "proxy": "http://localhost:3001/",
   "dependencies": {
     "react": "^16.6.3",
